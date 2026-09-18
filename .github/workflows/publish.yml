@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   publish:
@@ -30,7 +31,5 @@ jobs:
       - name: Pack
         run: dotnet pack --configuration Release --no-build --output ./nupkg
 
-      - name: Publish
-        run: dotnet nuget push "./nupkg/*.nupkg" \
-          --source "https://api.nuget.org/v3/index.json" \
-          --skip-duplicate
+      - name: Publish to NuGet
+        run: dotnet nuget push "./nupkg/*.nupkg" --source "https://api.nuget.org/v3/index.json" --skip-duplicate
