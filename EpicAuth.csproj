@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net8.0;net8.0-windows;net10.0;net10.0-windows</TargetFrameworks>
+
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageId>EpicAuth</PackageId>
+    <Version>1.0.6</Version>
+
+    <Authors>EpicAuth</Authors>
+    <Description>EpicAuth C# SDK</Description>
+
+    <PackageTags>EpicAuth;Authentication;License;SDK</PackageTags>
+
+    <RepositoryUrl>https://github.com/EpicAuth/EpicAuth-Core-CSHARP-Example</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageIcon>favicon.png</PackageIcon>
+
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE" Pack="true" PackagePath="\" />
+    <None Include="favicon.png" Pack="true" PackagePath="\" />
+
+  </ItemGroup>
+
+</Project>
